@@ -1,0 +1,134 @@
+{
+  "partners": [
+    {
+      "name": "Kurita",
+      "logo": "/images/partners/kurita.png"
+    },
+    {
+      "name": "Flotech",
+      "logo": "/images/partners/flotech.png"
+    },
+    {
+      "name": "Econse",
+      "logo": "/images/partners/econse.png"
+    },
+    {
+      "name": "Water Authority of Fiji",
+      "logo": "/images/partners/waf.png"
+    },
+    {
+      "name": "Band Water",
+      "logo": "/images/partners/band-water.png"
+    },
+    {
+      "name": "IBM",
+      "logo": "/images/partners/ibm.png"
+    },
+    {
+      "name": "AWS",
+      "logo": "/images/partners/aws.png"
+    },
+    {
+      "name": "SAP",
+      "logo": "/images/partners/sap.png"
+    },
+    {
+      "name": "Esri",
+      "logo": "/images/partners/esri.png"
+    },
+    {
+      "name": "Canary",
+      "logo": "/images/partners/canary.png"
+    },
+    {
+      "name": "OSIsoft",
+      "logo": "/images/partners/osisoft.png"
+    },
+    {
+      "name": "Autodesk",
+      "logo": "/images/partners/autodesk.png"
+    }
+  ],
+  "team": [
+    {
+      "name": "Mudassar Iqbal",
+      "title": "Founder & Chief Executive Officer",
+      "bio": "As CEO of TeamSolve, Mudassar leads the company's strategic direction and guides its culture of continuous improvement. With decades of experience in utility operations, he has built cutting-edge AI solutions that simplify critical infrastructure operations.",
+      "image": "/images/team/Mudasser-Iqbal.svg",
+      "linkedin": "https://www.linkedin.com/in/mudasseriqbal/"
+    },
+    {
+      "name": "Ami Preis",
+      "title": "Founder & Chief Operating Officer",
+      "bio": "Ami, COO of TeamSolve, manages global operations and drives the company's growth strategy. With deep expertise in water utilities, she delivers impactful results for water, energy, and industrial sectors.",
+      "image": "/images/team/Ami-Preis.svg",
+      "linkedin": "https://www.linkedin.com/in/ami-preis-0760b823/"
+    },
+    {
+      "name": "Michael Allen",
+      "title": "Founder & Chief Technology Officer",
+      "bio": "As CTO of TeamSolve, Michael spearheads technology development and solution engineering, ensuring the platform evolves to meet customers' needs into customers' operations.",
+      "image": "/images/team/Michael-Allen.svg",
+      "linkedin": "https://www.linkedin.com/in/michaelpeterallen/"
+    },
+    {
+      "name": "Robin Wong",
+      "title": "Founder & Chief Commercial Officer",
+      "bio": "Robin, CCO of TeamSolve, leads business development, sales, and partnerships, driving growth and fostering strong client relationships across water, energy, and infrastructure sectors.",
+      "image": "/images/team/Robin-Wong.svg",
+      "linkedin": "https://www.linkedin.com/in/robin-wong-3274ab8/"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Partnering with TeamSolve has been a significant step forward for us. Their AI-powered platform provides our field teams with real-time insights, standardized procedures, and hands-on guidance, enabling better decision-making on-site.",
+      "author": "Chris Evans",
+      "title": "Detection Services Chief Executive Officer",
+      "company": "Detection Services"
+    },
+    {
+      "quote": "With the Knowledge Twin's support, my staff can now work independently, significantly reducing errors and freeing up to 15% more time for other critical tasks.",
+      "author": "Mr. Lim Chee Wan",
+      "title": "Flowtech Project & Services Delivery Manager",
+      "company": "Flowtech"
+    },
+    {
+      "quote": "The integration of this AI-enabled knowledge insights platform for new workflows shows great promise in reshaping BWSI's operational and workforce capabilities with more proactiveness, greater consistency and visibility.",
+      "author": "Ms. Cristina P. Alejandro",
+      "title": "BWSI President",
+      "company": "Balibago Waterworks"
+    }
+  ],
+  "statistics": [
+    {
+      "value": "3+",
+      "label": "Hours Saved",
+      "description": "daily per operator"
+    },
+    {
+      "value": "5+",
+      "label": "Days Saved",
+      "description": "monthly per operator"
+    },
+    {
+      "value": "90%",
+      "label": "Satisfaction Rate",
+      "description": "driven by ease of use"
+    },
+    {
+      "value": "80%",
+      "label": "Increase",
+      "description": "in asset information visibility"
+    },
+    {
+      "value": "30%",
+      "label": "Faster Discovery",
+      "description": "of management insights"
+    },
+    {
+      "value": "50%",
+      "label": "Improvement",
+      "description": "in safety awareness"
+    }
+  ]
+}
