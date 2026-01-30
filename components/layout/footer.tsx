@@ -1,9 +1,42 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { Mail } from "lucide-react";
+import { usePathname, useRouter } from "next/navigation";
 import { SITE_CONFIG, FOOTER_LINKS } from "@/lib/constants";
 
 export function Footer() {
+  const pathname = usePathname();
+  const router = useRouter();
+
+  // Handle hash links (smooth scroll to section on same page)
+  const handleHashLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    // Check if it's a hash link
+    if (href.includes("#")) {
+      e.preventDefault();
+      
+      // Extract the base path and hash
+      const [basePath, hash] = href.split("#");
+      
+      // Check if we're already on the target page
+      if (pathname === "/" || pathname === basePath) {
+        // Same page - just scroll to section
+        const targetElement = document.getElementById(hash);
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+          window.history.pushState(null, "", `/#${hash}`);
+        }
+      } else {
+        // Different page - navigate first, then scroll
+        sessionStorage.setItem("scrollToHash", hash);
+        router.push(href);
+      }
+    }
+  };
   return (
     <footer className="w-full border-t border-divider bg-white">
       {/* Main Footer Content */}
@@ -64,6 +97,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
+                    onClick={(e) => handleHashLinkClick(e, link.href)}
                     className="text-xs sm:text-sm leading-relaxed text-text-secondary hover:text-text-primary transition-colors"
                   >
                     {link.label}
@@ -83,6 +117,7 @@ export function Footer() {
                 <li key={link.label}>
                   <Link
                     href={link.href}
+                    onClick={(e) => handleHashLinkClick(e, link.href)}
                     className="text-xs sm:text-sm leading-relaxed text-text-secondary hover:text-text-primary transition-colors"
                   >
                     {link.label}

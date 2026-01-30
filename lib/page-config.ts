@@ -21,7 +21,7 @@ export const PAGE_HEROES = {
   },
   media: {
     title: "Media & Resources",
-    description: "Explore our latest news, case studies, videos, and resources to learn more about Knowledge Twin and how it's transforming operations.",
+    description: "Explore TeamSolve Linkdin page for our latest news, case studies, videos, and resources to learn more about Knowledge Twin and how it's transforming operations.",
   },
   pricing: {
     title: "Pricing",

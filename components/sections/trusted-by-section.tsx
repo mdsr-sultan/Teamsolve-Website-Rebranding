@@ -5,22 +5,22 @@ import Image from "next/image";
 
 // Logo data configuration - easily maintainable
 const TRUSTED_LOGOS = [
-  { src: "/images/clients/Detection-Services.png", alt: "Detection Services", width: 180, height: 60 },
-  { src: "/images/clients/PIA.png", alt: "PIA", width: 120, height: 60 },
-  { src: "/images/clients/Rand-Water.png", alt: "Rand Water", width: 160, height: 60 },
-  { src: "/images/clients/Bali-Bago.png", alt: "Balibago Waterworks", width: 140, height: 60 },
-  { src: "/images/clients/Petrons.png", alt: "Petrons", width: 200, height: 60 },
-  { src: "/images/clients/Southington-Water-Department.png", alt: "Southington Water Department", width: 120, height: 60 },
-  { src: "/images/clients/Howard-County.png", alt: "Howard County", width: 140, height: 60 },
-  { src: "/images/clients/wannon-water.png", alt: "Wannon Water", width: 150, height: 60 },
-  { src: "/images/clients/earthlab.png", alt: "Earthlab", width: 130, height: 60 },
-  { src: "/images/clients/south-fort-collins.png", alt: "South Fort Collins", width: 150, height: 60 },
-  { src: "/images/clients/Hrsd.png", alt: "HRSD", width: 140, height: 60 },
-  { src: "/images/clients/nyc.png", alt: "NYC Environmental Protection", width: 120, height: 60 },
-  { src: "/images/clients/fiji.png", alt: "Water Authority of Fiji", width: 110, height: 60 },
-  { src: "/images/clients/midland.png", alt: "Midland", width: 130, height: 60 },
-  { src: "/images/clients/urban-utilities.png", alt: "Urban Utilities", width: 140, height: 60 },
-  { src: "/images/clients/exxor.png", alt: "Exxor", width: 120, height: 60 },
+  { src: "/images/clients/Detection-Services.png", alt: "Detection Services", width: 240, height: 80 },
+  { src: "/images/clients/PIA.png", alt: "PIA", width: 160, height: 80 },
+  { src: "/images/clients/Rand-Water.png", alt: "Rand Water", width: 220, height: 80 },
+  { src: "/images/clients/Bali-Bago.png", alt: "Balibago Waterworks", width: 200, height: 80 },
+  { src: "/images/clients/Petrons.png", alt: "Petrons", width: 260, height: 80 },
+  { src: "/images/clients/Southington-Water-Department.png", alt: "Southington Water Department", width: 180, height: 80 },
+  { src: "/images/clients/Howard-County.png", alt: "Howard County", width: 200, height: 80 },
+  { src: "/images/clients/wannon-water.png", alt: "Wannon Water", width: 210, height: 80 },
+  { src: "/images/clients/earthlab.png", alt: "Earthlab", width: 180, height: 80 },
+  { src: "/images/clients/south-fort-collins.png", alt: "South Fort Collins", width: 210, height: 80 },
+  { src: "/images/clients/Hrsd.png", alt: "HRSD", width: 200, height: 80 },
+  { src: "/images/clients/nyc.png", alt: "NYC Environmental Protection", width: 180, height: 80 },
+  { src: "/images/clients/fiji.png", alt: "Water Authority of Fiji", width: 160, height: 80 },
+  { src: "/images/clients/midland.png", alt: "Midland", width: 180, height: 80 },
+  { src: "/images/clients/urban-utilities.png", alt: "Urban Utilities", width: 200, height: 80 },
+  { src: "/images/clients/exxor.png", alt: "Exxor", width: 180, height: 80 },
 ] as const;
 
 // Section configuration
@@ -35,13 +35,13 @@ interface LogoItemProps {
 
 function LogoItem({ logo }: LogoItemProps) {
   return (
-    <div className="flex h-20 w-36 shrink-0 items-center justify-center py-3">
+    <div className="flex h-32 w-64 items-center justify-center px-6 py-4">
       <Image
         src={logo.src}
         alt={logo.alt}
         width={logo.width}
         height={logo.height}
-        className="h-auto max-h-14 w-auto max-w-full object-contain"
+        className="h-auto max-h-20 w-auto max-w-full object-contain"
       />
     </div>
   );

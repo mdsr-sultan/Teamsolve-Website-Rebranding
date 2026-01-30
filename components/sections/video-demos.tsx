@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { Play, ChevronRight, X } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import {
@@ -82,8 +81,8 @@ export function VideoDemos() {
 
   return (
     <>
-      <section className="w-full bg-white py-12 lg:py-20" id="demo-videos">
-        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col items-center gap-10">
+      <section className="w-full bg-white py-12 lg:py-20">
+        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col items-center gap-10" id="demo-videos">
           {/* Header */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -128,14 +127,18 @@ export function VideoDemos() {
                 onClick={() => handleVideoClick(video)}
                 className="w-full cursor-pointer overflow-hidden rounded-xl border border-video-border bg-white shadow-sm transition-all hover:shadow-lg sm:w-[calc(50%-1rem)] lg:w-96"
               >
-                {/* Thumbnail */}
-                <div className="relative h-48 w-full overflow-hidden bg-gradient-to-br from-gray-200 to-gray-300">
-                  <Image
-                    src={video.thumbnail}
-                    alt={video.title}
-                    fill
-                    className="object-cover"
+                {/* Video Thumbnail */}
+                <div className="relative h-48 w-full overflow-hidden">
+                  <video
+                    src={`${video.videoUrl}#t=30`}
+                    className="h-full w-full object-cover"
+                    muted
+                    playsInline
+                    preload="auto"
                   />
+
+                  {/* Overlay */}
+                  <div className="absolute inset-0 bg-black/20"></div>
 
                   {/* Duration Badge */}
                   <div className="absolute bottom-3 left-3 rounded bg-black/60 px-2 py-1 backdrop-blur-sm">

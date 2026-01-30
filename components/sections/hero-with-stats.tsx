@@ -34,7 +34,7 @@ export function HeroWithStats({ statistics }: HeroWithStatsProps) {
       </div>
 
       {/* Main Content Container */}
-      <div className="container relative z-10 mx-auto w-11/12 pt-8 sm:pt-10 md:pt-12 lg:pt-14">
+      <div className="container relative z-10 mx-auto w-11/12 pt-8 sm:pt-10 lg:pt-8">
         {/* Hero Content - Flexbox Layout */}
         <div className="flex flex-col gap-12 lg:flex-row lg:items-start lg:gap-16">
           {/* Left Column - Text Content */}
@@ -117,13 +117,13 @@ export function HeroWithStats({ statistics }: HeroWithStatsProps) {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="flex flex-1 items-center justify-center lg:justify-center"
           >
-            <div className="relative w-full max-w-xl">
+            <div className="relative w-full max-w-xl border border-8 border-text-primary/95 rounded-md">
               <Image
                 src="/images/gifs/teamSolve-frontPage.gif"
                 alt="TeamSolve Knowledge Twin Dashboard"
                 width={689}
                 height={386}
-                className="h-auto w-full drop-shadow-xl rounded-md"
+                className="h-auto w-full drop-shadow-xl"
                 priority
                 unoptimized
               />

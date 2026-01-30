@@ -66,7 +66,7 @@ export default function ImpactPage() {
             {groupedCards.map((cardGroup, slideIndex) => (
               <SwiperSlide key={slideIndex}>
                 {/* Full Width Slide - Contains Multiple Cards */}
-                <div className="flex flex-col gap-8 sm:gap-10 lg:gap-12">
+                <div className="flex flex-col gap-3">
                   {cardGroup.map((study) => (
                     <div key={study.id} className="group overflow-hidden">
                       {/* Card Internal Layout - 2 Main Sections */}

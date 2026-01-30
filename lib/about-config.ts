@@ -27,6 +27,6 @@ export const ABOUT_CONTENT = {
 
 // Placeholder for team images - user needs to provide these
 export const TEAM_IMAGES = {
-  image1: "/images/team/workshop.svg", // Main presentation image
-  image2: "/images/team/workshop-1.svg", // Grid of team photos
+  image1: "/images/team/workshop-full.svg", // Main presentation image
+  // image2: "/images/team/workshop-1.svg", // Grid of team photos
 } as const;

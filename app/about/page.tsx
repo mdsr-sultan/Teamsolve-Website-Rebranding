@@ -94,25 +94,17 @@ export default function AboutPage() {
           </div>
 
           {/* Team Images Grid */}
-          <div className="mt-10 sm:mt-12 grid grid-cols-1 gap-4 sm:gap-6 lg:mt-16 lg:grid-cols-2 lg:gap-8">
-            <div className="relative aspect-[16/11] overflow-hidden rounded-xl sm:rounded-2xl bg-bg-light">
+          <div className="mt-2 md:mt-4 lg:mt-6">
+            <div className="relative w-full rounded-xl sm:rounded-2xl overflow-hidden">
               <Image
                 src={TEAM_IMAGES.image1}
                 alt="TeamSolve team presentation"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative aspect-[16/11] overflow-hidden rounded-xl sm:rounded-2xl bg-bg-light">
-              <Image
-                src={TEAM_IMAGES.image2}
-                alt="TeamSolve team photos"
-                fill
-                className="object-cover"
+                width={1200}
+                height={600}
+                className="w-full h-auto"
               />
             </div>
           </div>
-
         </div>
       </section>
 
