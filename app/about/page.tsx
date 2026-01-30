@@ -102,6 +102,7 @@ export default function AboutPage() {
                 width={1200}
                 height={600}
                 className="w-full h-auto"
+                loading="lazy"
               />
             </div>
           </div>

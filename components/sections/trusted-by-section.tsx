@@ -42,6 +42,7 @@ function LogoItem({ logo }: LogoItemProps) {
         width={logo.width}
         height={logo.height}
         className="h-auto max-h-20 w-auto max-w-full object-contain"
+        loading="lazy"
       />
     </div>
   );
